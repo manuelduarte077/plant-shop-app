@@ -6,16 +6,13 @@ public class Plant {
     String   plantName;
     String   plantPrice;
     Integer  plantImage;
-    Integer  plantHeart;
-    Integer  plantPluss;
 
-    public Plant(Integer plantID, String plantName, String plantPrice, Integer plantImage, Integer plantHeart, Integer plantPluss) {
+    public Plant(Integer plantID, String plantName, String plantPrice, Integer plantImage) {
         this.plantID = plantID;
         this.plantName = plantName;
         this.plantPrice = plantPrice;
         this.plantImage = plantImage;
-        this.plantHeart = plantHeart;
-        this.plantPluss = plantPluss;
+
     }
 
     public Integer getPlantID() {
@@ -48,21 +45,5 @@ public class Plant {
 
     public void setPlantImage(Integer plantImage) {
         this.plantImage = plantImage;
-    }
-
-    public Integer getPlantHeart() {
-        return plantHeart;
-    }
-
-    public void setPlantHeart(Integer plantHeart) {
-        this.plantHeart = plantHeart;
-    }
-
-    public Integer getPlantPluss() {
-        return plantPluss;
-    }
-
-    public void setPlantPluss(Integer plantPluss) {
-        this.plantPluss = plantPluss;
     }
 }
