@@ -1,6 +1,8 @@
 package com.hardsoftday.plantshopapp.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.provider.CalendarContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +38,10 @@ public class PopularPlantAdapter extends RecyclerView.Adapter<PopularPlantAdapte
     @Override
     public void onBindViewHolder(@NonNull PopularViewHolder holder, int position) {
         holder.popularName.setText(popularPlantList.get(position).getPopularName());
+
+        if(position==0)
+          holder.popularName.setTextColor(Color.parseColor("#00B761"));
+
     }
 
     @Override
